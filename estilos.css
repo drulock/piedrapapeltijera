@@ -1,0 +1,108 @@
+html {
+    
+    font-family: 'Montserrat', sans-serif;
+}
+
+body { 
+    background-image: linear-gradient(to right, #DAE2F8, #D6A4A4);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.titulo {
+    margin: 25px;
+    font-size: 2rem;
+    color: rgb(75, 75, 75);
+}
+
+.eleccion {
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.piedra:hover {
+    transition: all 0.5s;
+    transform: scale(1.2);
+}
+
+.papel:hover {
+    transition: all 0.5s;
+    transform: scale(1.2);
+}
+
+.tijera:hover {
+    transition: all 0.5s;
+    transform: scale(1.2);
+}
+
+.seleccion {
+    font-size: 2rem;
+    color: rgb(75, 75, 75);
+    padding-bottom: 20px;
+}
+
+.boton {
+    font-size: 3rem;
+    color: black;
+    background-image: linear-gradient(to right, #ccffff, white);
+    border: 2px solid;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    width: 300px;
+    -webkit-box-shadow: 6px 5px 24px grey;
+    -moz-box-shadow: 6px 5px 24px grey;
+    box-shadow: 6px 5px 24px grey;
+    text-decoration: none;
+    
+}
+
+.boton:hover {
+    background-image: linear-gradient(to right, white, #ccffff);
+    text-decoration: none;
+}
+
+.jugar {
+    font-size: 2rem;
+    color: rgb(75, 75, 75);
+    padding-top: 20px;
+}
+
+
+
+.headerJugador, .headerPc {
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    color: black;
+    height: 40px;
+}
+
+.puntuacionJugador, .puntuacionPc {
+    padding-left: 10px;
+}
+
+@media (max-width: 600px) {
+    .piedra, .papel, .tijera {
+    max-width: 50px;
+    }
+    
+    .boton {
+        width: 200px;
+        font-size: medium;
+    }
+
+    .titulo, .eleccion, .seleccion, .jugar, .headerJugador, .headerPc, .puntuacionJugador, .puntuacionPc, .h1 {
+        font-size: small;
+    }
+}
